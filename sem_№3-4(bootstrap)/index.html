@@ -1,0 +1,360 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная | FOMCHV</title>
+  <link rel="icon" href="logo.svg" sizes="16x16 32x32" type="img/svg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+  <script src="main.JS"></script>
+  <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" ></script>  
+  <style>
+    /* Modify the background color */
+     
+  .navbar-custom {
+  position: absolute;
+  background: none;
+  z-index: 999;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .custom-toggler.navbar-toggler {
+    background-color: #121212;
+    border-color: none;
+    border-radius: 0
+  } 
+    
+  .navbar-custom a{
+    color: white !important;
+    font-size: 1.5em !important;
+    font-weight:500
+  }
+
+  /* Modify brand and text color */
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+    background-color: #121212;
+
+    color: white !important;
+    font-size: 2em !important;
+    font-weight:500
+  }
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav  class="navbar-custom navbar navbar-expand-lg fixed-top">
+  <div  class="container-fluid mx-sm-5">
+    <a class="navbar-brand" href="#">FOMCHV</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FOMCHV</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a id="navbarlink"class="nav-link ps-2" href="#">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a id="navbarlink"class="nav-link ps-2" href="#">О себе</a>
+          </li>
+          <li class="nav-item">
+            <a id="navbarlink"class="nav-link ps-2" href="#">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a id="signinlink"class="nav-link ps-2" href="signin.html">Войти</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Войти
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-start" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a style="color: black;" class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+<!-- 
+  Карусель
+-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div style="height: 100vh"  class="carousel-item active">
+      <img style="height: 100%" src="1.jpg" class="d-block w-100" alt="...">
+      <div id="carouselback"  class="carousel-caption d-none d-md-block">
+        <h5 style="color: white;">ПУТИН</h5>
+        <p style="color: white;">Умный🧠 Харизматичный😏 Ответственный🧐 Дорогой💎 Идеальный👌</p>
+      </div>
+    </div>
+    <div style="height: 100vh"  class="carousel-item">
+      <img style="height: 100%" src="2.jpeg" class="d-block w-100" alt="...">
+      <div id="carouselback" class="carousel-caption d-none d-md-block">
+        <h5 style="color: white;">ВЛАДИМИР</h5>
+        <p style="color: white;">Умный🧠 Харизматичный😏 Ответственный🧐 Дорогой💎 Идеальный👌</p>
+      </div>
+    </div>
+    <div style="height: 100vh"  class="carousel-item">
+      <img style="height: 100%"  src="3.jpg" class="d-block w-100" alt="...">
+      <div id="carouselback"class="carousel-caption d-none d-md-block">
+        <h5 style="color: white;">ВЛАДИМИРОВИЧ</h5>
+        <p style="color: white;">Умный🧠 Харизматичный😏 Ответственный🧐 Дорогой💎 Идеальный👌</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <section style="background-color: #121212; height: auto;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-6 mt-5 mb-5">
+            <div class="card text-black" style="border-radius: 20px; box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px, rgb(0 0 0 / 12%) 0px 3px 6px 0px;">
+              <div class="card-body p-md-3">
+                <div class="row justify-content-center">
+                  <div class="col">
+    
+                    <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-3">Регистрация</p>
+    
+                    <form class="mx-1 mx-md-4" id="Scoring" action="http://localhost:555/hs/bang/send" method="POST">
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Имя</label>
+                          <input required type="text" id="form3Example1c" class="form-control" />
+                          
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Фамилия</label>
+                          <input type="text" id="form3Example1c" class="form-control" />
+                          
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          
+                          <label class="form-label" for="form3Example1c">Отчество</label>
+                          <input type="text" id="form3Example1c" class="form-control" />
+                          
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Гендер</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              Убили
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Ни за что, ни про что
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+
+                          <label class="form-label" for="form3Example1c">Дата рождения</label>
+                          <input type="date" id="form3Example1c" class="form-control" />
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+
+                          <label class="form-label" for="form3Example3c">Город</label>
+                          <input list="citys"  id="form3Example3c" class="form-control">
+                    
+                          <datalist id="citys">
+                            <option value="Москва">
+                            <option value="неМосква">               
+                          </datalist> 
+
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">О себе</label>
+                          <textarea style="max-height: 200px" maxlength="300" rows="5" class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+                          
+                          <label class="form-label" for="form3Example1c">Телефон</label>
+                          <input required id="selector" id="form3Example1c" class="form-control" name="phone_number" />
+                          
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+
+                          <label class="form-label" for="form3Example3c">Email</label>
+                          <input required type="email" id="form3Example3c" class="form-control" />
+                          
+                        </div>
+                      </div>
+
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="form-outline flex-fill mb-0">
+
+                          <label class="form-label" for="form3Example4c">Пароль</label>
+                          <input minlength="8" maxlength="20" required type="password" id="form3Example4c" class="form-control" />
+                          
+                        </div>
+                      </div>
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example4cd">Повторите ваш пароль</label>
+                          <input minlength="8" maxlength="20" required type="password" id="form3Example4cd" class="form-control" />
+                          
+                        </div>
+                      </div>
+    
+                      <div class="form-check d-flex justify-content-center mb-5">
+                        <input
+                          class="form-check-input ps-2 pe-1 me-3"
+                          type="checkbox"
+                          value=""
+                          id="form2Example3c"
+                        />
+                        <label class="form-check-label" for="form2Example3">
+                          Даю свое согласие на обработку моих персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>                        </label>
+                      </div>
+    
+                      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <button type="submit" class="btn btn-block btn-outline-dark btn-lg" name="contact-button" style="font-weight: 600; font-size: 14px">ПОДТВЕРДИТЬ</button>            </div>
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                  <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+    
+                    <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/draw1.png" class="img-fluid" alt="Sample image">
+    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #ffffff;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgb(255, 255, 255);">
+        <a id="footerlink" class="text-white bg-dark" href="#">FOMCVH</a>
+        <!-- © 2021 -->
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+  <script src="https://unpkg.com/imask"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FOMCHV</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1><a href="https://vk.com/fomchv" rel="dofollow">Регистрация</a></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Расскажите поподробнее о себе</span>
+              <form id="Scoring" action="http://localhost:555/hs/bang/send" method="POST">
+                <div class="field padding-bottom--24">
+                  <label for="name">Имя</label>
+                  <input type="name" required name="name">
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="surname">Фамилия</label>
+                  <input type="surname" required name="surname">
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="second_name">Отчество</label>
+                  <input type="second_name" name="second_name">
+                </div>
+
+                <div class="field-radio padding-bottom--24">
+                  <label for="phone_number">Гендер</label>
+                  <input type="radio" name="color" value="male">Mужчина <br>  
+                  <input type="radio" name="color" value="female">Женщина <br>  
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="date">Дата рождения</label>
+                  <input type="date" name="date">
+                </div>
+                
+                <div class="field padding-bottom--24">
+                  <label for="citys">Город проживания</label>
+                  <input list="citys">
+
+                  <datalist id="citys">
+                    <option value="Москва">
+                    <option value="неМосква">               
+                  </datalist> 
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="text">О себе</label>
+                  <textarea maxlength="300"; rows="5" name="text"></textarea>
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="phone_number">Номер телефона</label>
+                  <input id="selector" name="phone_number">
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <label for="email">Email</label>
+                  <input type="email" required name="email">
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Пароль</label>
+                  </div>
+                  <label>
+                    <input  minlength="8" maxlength="16" class="password" type="password" name="password" >
+                    <i class="show fa fa-eye"></i>
+                    <i class="hide fa fa-eye-slash"></i>
+                  </label>
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password_rep">Повторите пароль</label>
+                  </div>
+                  <input minlength="8" maxlength="16" type="password" name="password_rep">
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Зарегестрироваться">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            <!-- <span>Don't have an account? <a href="">Sign up</a></span> -->
+            <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+              <span><a href="https://vk.com/fomchv">© FOMCHV</a></span>
+              <!-- <span><a href="#">Contact</a></span>
+              <span><a href="#">Privacy & terms</a></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="main.JS"></script>
+</body>
+
+</html>
